@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FCC29309248177F400FB3BE9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCC29308248177F400FB3BE9 /* main.cpp */; };
+		FCC2931324817A2700FB3BE9 /* RootsOfEquation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCC2931124817A2700FB3BE9 /* RootsOfEquation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		FCC29305248177F400FB3BE9 /* Data-structures-and-algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data-structures-and-algorithms"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCC29308248177F400FB3BE9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FCC2931124817A2700FB3BE9 /* RootsOfEquation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RootsOfEquation.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 		FCC292FC248177F400FB3BE9 = {
 			isa = PBXGroup;
 			children = (
-				FCC29307248177F400FB3BE9 /* C++ */,
+				FCC2930F248179DC00FB3BE9 /* algorithm to find all roots of a quadratic equation ax2+bx+c=0 */,
 				FCC29306248177F400FB3BE9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,10 +54,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FCC29307248177F400FB3BE9 /* C++ */ = {
+		FCC2930F248179DC00FB3BE9 /* algorithm to find all roots of a quadratic equation ax2+bx+c=0 */ = {
 			isa = PBXGroup;
 			children = (
-				FCC29308248177F400FB3BE9 /* main.cpp */,
+				FCC29310248179FF00FB3BE9 /* C++ */,
+			);
+			path = "algorithm to find all roots of a quadratic equation ax2+bx+c=0";
+			sourceTree = "<group>";
+		};
+		FCC29310248179FF00FB3BE9 /* C++ */ = {
+			isa = PBXGroup;
+			children = (
+				FCC2931124817A2700FB3BE9 /* RootsOfEquation.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
@@ -119,7 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC29309248177F400FB3BE9 /* main.cpp in Sources */,
+				FCC2931324817A2700FB3BE9 /* RootsOfEquation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
