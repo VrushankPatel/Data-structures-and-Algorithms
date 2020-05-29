@@ -41,7 +41,7 @@
 		FCC292FC248177F400FB3BE9 = {
 			isa = PBXGroup;
 			children = (
-				FCC29307248177F400FB3BE9 /* Data-structures-and-algorithms */,
+				FCC29307248177F400FB3BE9 /* C++ */,
 				FCC29306248177F400FB3BE9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FCC29307248177F400FB3BE9 /* Data-structures-and-algorithms */ = {
+		FCC29307248177F400FB3BE9 /* C++ */ = {
 			isa = PBXGroup;
 			children = (
 				FCC29308248177F400FB3BE9 /* main.cpp */,
 			);
-			path = "Data-structures-and-algorithms";
+			path = "C++";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
