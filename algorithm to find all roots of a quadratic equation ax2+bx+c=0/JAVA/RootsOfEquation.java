@@ -1,13 +1,19 @@
 import java.util.Scanner;
 
 class RootsOfEquation{
-    public static void main(final String[] args) {
-        float a, b, c, realpart, imaginarypart, discriminant, root1, root2;
-        final Scanner sc = new Scanner(System.in);
-        a = sc.nextFloat();
-        b = sc.nextFloat();
-        c = sc.nextFloat();
+    float a, b, c, realpart, imaginarypart, discriminant, root1, root2;
+    final Scanner sc = new Scanner(System.in);
+    public static void main(final String[] args) {        
+        RootsOfEquation root = new RootsOfEquation();
+
+        root.a = root.sc.nextFloat();
+        root.b = root.sc.nextFloat();
+        root.c = root.sc.nextFloat();
         
+        root.rootsOfEquation(root.a, root.b, root.c);
+        
+    }
+    private void rootsOfEquation(float a, float b, float c){
         discriminant = (b * b) - (4 * a * c);
         
         if(discriminant >= 0){            
