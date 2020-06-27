@@ -110,7 +110,7 @@ public class BigOTimeComplexity {
         // Binary search is the example of O(log n), we can search element in 19 comparison only in 1 million items.
         // Logarithmic curve slows down at some points as the input size grows.
 
-        // O(2 ^ n) : Exponential curve grows faster and faster 
+        // O(2 ^ n) : Exponential curve grows faster and faster
         // Exponential is exact opposite of logarithmic
         // the algorithm that run in exponential time is not be scalable, it'll become very slow very soon.
 
