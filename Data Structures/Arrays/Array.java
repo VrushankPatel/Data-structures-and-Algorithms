@@ -4,13 +4,13 @@ public class Array {
     private int[] array;
     private int counter = 0;
 
-    Array(int length){
+    public Array(int length){
         array = new int[length];
     }
 
     // Time Complexity for insert operation in array
     // O(n)
-    void insert(int number){
+    public void insert(int number){
         if(array.length == counter){
             int[] newArray = new int[array.length * 2];
             for(int i = 0; i < counter; i++){
@@ -21,7 +21,7 @@ public class Array {
         array[counter++] = number;
     }
 
-    void print(){
+    public void print(){
         System.out.print("[");
         for(int i = 0; i < counter ; i++){
             System.out.print(this.array[i] + ", ");
