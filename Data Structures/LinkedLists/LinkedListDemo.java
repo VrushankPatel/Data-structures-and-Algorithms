@@ -29,22 +29,24 @@ public class LinkedListDemo {
         list.addLast(24);
         list.addLast(44);
         list.addLast(84);
-        list.removeFirst();
-        list.print();
+        list.addLast(24);
+        list.addLast(89);
+        list.addLast(10);
+        list.addLast(73);
+        /*list.removeFirst();
         list.addLast(14);
-        list.print();
         list.addFirst(93);
-        list.print();
         list.addFirst(124);
         list.addLast(144);
-        list.print();
         list.removeLast();
-        list.print();
         System.out.println(list.indexOf(93));
         System.out.println(list.contains(93));
         System.out.println("Size = " + list.size());
         list.print();
         int[] array = list.toArray();
-        System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(array));*/
+        //list.reverse();
+        list.print();
+        System.out.println(list.getKthFromTheEnd(7));
     }
 }

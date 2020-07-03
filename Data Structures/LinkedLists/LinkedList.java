@@ -99,6 +99,11 @@ public class LinkedList {
         last.next = null;
     }
 
+    public void clearList(){
+        // [10 -> 20 -> 30 -> 40]
+        first = last = null;
+    }
+
     private Node getPrevious(Node node){
         Node current = first;
         while (current != null){
@@ -133,6 +138,63 @@ public class LinkedList {
 
     private boolean isEmpty(){
         return first == null;
+    }
+
+    public void reverse(){
+        // [10 -> 20 -> 30 -> 40]
+        if(isEmpty()) return;
+
+        Node previous = first;
+        Node current = first.next;
+
+        while(current != null){
+            Node next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+
+        last = first;
+        last.next = null;
+        first = previous;   //  because at the end of the loop, current will be null, so the previoud object will be last node.
+    }
+    /**
+     * below method also can be used for reverse the list but it will use another list to traverse through all elements.
+    public void reverse(){
+        Node temp = first;
+        clearList();
+        while(temp != null){
+            addFirst(temp.value);
+            temp = temp.next;
+        }
+    }*/
+
+    public int getKthFromTheEnd(int k){
+        if(isEmpty()){
+            throw new IllegalStateException();
+        }
+
+        /**
+         * below code can validate the k's value
+         * but we no longer need this because we can use next to check wether it is null or not in the next while loop.
+        if (k > size() || k == 0){
+            throw new IllegalArgumentException();
+        }*/
+        Node current = first;
+        Node next = first;
+
+        while (k-- > 1) {
+            next = next.next;
+            if (next == null){      // if next is null, then k is greater then size of list, so we'll throw exception
+                throw new IllegalArgumentException();
+            }
+        };
+
+        while (next != last){
+            current = current.next;
+            next = next.next;
+        }
+        return current.value;
     }
 
     public class Node {
