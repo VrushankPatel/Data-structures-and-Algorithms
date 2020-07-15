@@ -17,7 +17,8 @@ public class LinkedListDemo {
                 * In the middle : O(n) because first of all we have to search the item
             * Delete operation :
                 * At the beginning : O(1)
-                * At the End : O(n) because we have to search the second last element in list
+                * At the End : singly linked list : O(n) because we have to search the second last element in list
+                * At the End : doubly linked list : O(1)
                 * In the middle : O(n) because first of all we have to search the item
          */
     }
@@ -33,6 +34,7 @@ public class LinkedListDemo {
         list.addLast(89);
         list.addLast(10);
         list.addLast(73);
+        list.addLast(92);
         /*list.removeFirst();
         list.addLast(14);
         list.addFirst(93);
@@ -47,6 +49,8 @@ public class LinkedListDemo {
         System.out.println(Arrays.toString(array));*/
         //list.reverse();
         list.print();
+        list.printMiddle();
+        System.out.println(list.hasLoop());
         System.out.println(list.getKthFromTheEnd(7));
     }
 }
