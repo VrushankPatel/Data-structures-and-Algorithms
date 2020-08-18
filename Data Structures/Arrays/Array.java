@@ -41,7 +41,7 @@ public class Array {
         return -1;
     }
 
-    // Time Complexity for indexOf
+    // Time Complexity for removeAt
     // Best case : O(1) : when we remove item from end of the array
     // Worst case : O(n)
     void removeAt(int index){
@@ -54,7 +54,7 @@ public class Array {
     }
 
     int largest(){
-        int largest = 0;
+        int largest = array[0];
         for (int value : array) {
             if (value > largest) {
                 largest = value;
@@ -87,9 +87,9 @@ public class Array {
 
     void insertAt(int item, int index){
         // if index is smaller then counter then index will be considered, otherwise counter will insert as regularly
-        index = Math.min(index, counter);
+        index = index > counter ? counter : index;
         // OR we can write below code..
-        //index = index > counter ? counter : index;
+        // index = Math.min(index, counter);
         int temp;
         counter++;
         for(int i = index ; i < counter ; i++){
